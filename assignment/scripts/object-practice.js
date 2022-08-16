@@ -52,3 +52,22 @@ console.log("After my recent purchase, I now have", me.shoeCount, "shoes!")
 */
 me.favoriteColor = "Blue";
 console.log("My favorite color is:", me.favoriteColor);
+
+//Personal Stretch Goal with Constructor Functions
+
+function People(first, last, siblings, shoes, favFoods, favColor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.hasSiblings = siblings;
+  this.shoeCount = shoes;
+  this.favThreeFoods = favFoods;
+  this.favoriteColor = favColor;
+  this.fullName = `${first} ${last}`;
+}
+
+const myself = new People("Lloyd", "Prock", true, 16, ["Steak", "Pasta", "Candy"]);
+const someoneElse = new People("Benjamin", "Jackson", false, 2, [], "Red");
+console.log("My constructed full name is", myself.fullName);
+console.log("Someone Elses constructed full name is:", someoneElse.fullName);
+console.log("My favorite color should be undefined:", myself.favoriteColor);
+console.log("Someone else should not have any favorite foods:", someoneElse.favThreeFoods);
