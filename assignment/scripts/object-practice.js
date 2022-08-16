@@ -13,7 +13,7 @@ const me = {
   firstName: "Lloyd",
   lastName: "Prock",
   hasSiblings: true,
-  shoeCount: 8 * 2,
+  shoeCount: 8 * 2, //8 pairs times two shoes per pair :-)
   favThreeFoods: ["Pasta", "Sushi", "Potatoes"]
 };
 console.log('A little about me:', me);
